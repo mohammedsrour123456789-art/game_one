@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة إكس - أو (Tic-Tac-Toe)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>لعبة إكس - أو</h1>
+
+        <!-- اختيار وضع اللعب -->
+        <div class="mode-selector">
+            <button id="btn-two-players" class="mode-btn active">لاعبين</button>
+            <button id="btn-vs-cpu" class="mode-btn">ضد الكمبيوتر</button>
+        </div>
+
+        <!-- لوحة النتائج -->
+        <div class="score-board">
+            <div class="score-item">
+                <span class="label">اللاعب (X)</span>
+                <span id="score-x" class="score">0</span>
+            </div>
+            <div class="score-item">
+                <span class="label">التعادل</span>
+                <span id="score-draw" class="score">0</span>
+            </div>
+            <div class="score-item">
+                <span class="label">اللاعب (O)</span>
+                <span id="score-o" class="score">0</span>
+            </div>
+        </div>
+
+        <!-- نص دور من الآن -->
+        <div id="status" class="status-text">دور اللاعب X</div>
+
+        <!-- شبكة اللعب -->
+        <div class="board" id="board">
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+        </div>
+
+        <!-- أزرار التحكم -->
+        <div class="controls">
+            <button id="restart-btn" class="action-btn">إعادة الجولة</button>
+            <button id="reset-all-btn" class="action-btn secondary">تصفير النتائج</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
